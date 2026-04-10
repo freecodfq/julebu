@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "course-premium-0",
+    "category": "权威主题库",
+    "title": "情绪英语单词大全",
+    "words": [
+      {
+        "en": "happy",
+        "zh": "快乐的",
+        "ipa": "/ˈhæpi/",
+        "sentenceEn": "I feel happy today.",
+        "sentenceZh": "我今天感到很快乐。"
+      },
+      {
+        "en": "sad",
+        "zh": "悲伤的",
+        "ipa": "/sæd/",
+        "sentenceEn": "He is feeling sad.",
+        "sentenceZh": "他感到很悲伤。"
+      },
+      {
+        "en": "angry",
+        "zh": "生气的",
+        "ipa": "/ˈæŋɡri/",
+        "sentenceEn": "The boss is angry.",
+        "sentenceZh": "老板很生气。"
+      },
+      {
+        "en": "surprised",
+        "zh": "惊讶的",
+        "ipa": "/sərˈpraɪzd/",
+        "sentenceEn": "I was very surprised.",
+        "sentenceZh": "我非常惊讶。"
+      },
+      {
+        "en": "tired",
+        "zh": "疲倦的",
+        "ipa": "/ˈtaɪərd/",
+        "sentenceEn": "She is getting tired.",
+        "sentenceZh": "她渐渐感到疲倦了。"
+      },
+      {
+        "en": "excited",
+        "zh": "兴奋的",
+        "ipa": "/ɪkˈsaɪtɪd/",
+        "sentenceEn": "We are so excited.",
+        "sentenceZh": "我们太兴奋了。"
+      },
+      {
+        "en": "nervous",
+        "zh": "紧张的",
+        "ipa": "/ˈnɜːrvəs/",
+        "sentenceEn": "I am nervous before exams.",
+        "sentenceZh": "考试前我很紧张。"
+      },
+      {
+        "en": "calm",
+        "zh": "平静的",
+        "ipa": "/kɑːm/",
+        "sentenceEn": "Please stay calm.",
+        "sentenceZh": "请保持平静。"
+      },
+      {
+        "en": "bored",
+        "zh": "无聊的",
+        "ipa": "/bɔːrd/",
+        "sentenceEn": "I am totally bored.",
+        "sentenceZh": "我彻底无聊了。"
+      },
+      {
+        "en": "proud",
+        "zh": "骄傲的",
+        "ipa": "/praʊd/",
+        "sentenceEn": "They are proud of you.",
+        "sentenceZh": "他们为你感到骄傲。"
+      },
+      {
+        "en": "jealous",
+        "zh": "嫉妒的",
+        "ipa": "/ˈdʒeləs/",
+        "sentenceEn": "He is jealous of her.",
+        "sentenceZh": "他很嫉妒她。"
+      },
+      {
+        "en": "scared",
+        "zh": "害怕的",
+        "ipa": "/skerd/",
+        "sentenceEn": "Don't be scared.",
+        "sentenceZh": "不要害怕。"
+      },
+      {
+        "en": "lonely",
+        "zh": "孤独的",
+        "ipa": "/ˈləʊnli/",
+        "sentenceEn": "He lives a lonely life.",
+        "sentenceZh": "他过着孤独的生活。"
+      },
+      {
+        "en": "shy",
+        "zh": "害羞的",
+        "ipa": "/ʃaɪ/",
+        "sentenceEn": "The little girl is shy.",
+        "sentenceZh": "那个小女孩很害羞。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-1",
+    "category": "权威主题库",
+    "title": "水果英语单词大全",
+    "words": [
+      {
+        "en": "apple",
+        "zh": "苹果",
+        "ipa": "/ˈæpl/",
+        "sentenceEn": "I like eating fresh apples.",
+        "sentenceZh": "我喜欢吃新鲜的苹果。"
+      },
+      {
+        "en": "banana",
+        "zh": "香蕉",
+        "ipa": "/bəˈnænə/",
+        "sentenceEn": "He bought a yellow banana.",
+        "sentenceZh": "他买了一根黄香蕉。"
+      },
+      {
+        "en": "orange",
+        "zh": "橙子",
+        "ipa": "/ˈɔːrɪndʒ/",
+        "sentenceEn": "Please give me an orange.",
+        "sentenceZh": "请给我一个橙子。"
+      },
+      {
+        "en": "grape",
+        "zh": "葡萄",
+        "ipa": "/ɡreɪp/",
+        "sentenceEn": "These grapes are very sweet.",
+        "sentenceZh": "这些葡萄非常甜。"
+      },
+      {
+        "en": "strawberry",
+        "zh": "草莓",
+        "ipa": "/ˈstrɔːberi/",
+        "sentenceEn": "I love strawberry cake.",
+        "sentenceZh": "我爱草莓蛋糕。"
+      },
+      {
+        "en": "watermelon",
+        "zh": "西瓜",
+        "ipa": "/ˈwɔːtərmelən/",
+        "sentenceEn": "Watermelon is great in summer.",
+        "sentenceZh": "夏天吃西瓜太棒了。"
+      },
+      {
+        "en": "peach",
+        "zh": "桃子",
+        "ipa": "/piːtʃ/",
+        "sentenceEn": "This peach is soft.",
+        "sentenceZh": "这个桃子很软。"
+      },
+      {
+        "en": "cherry",
+        "zh": "樱桃",
+        "ipa": "/ˈtʃeri/",
+        "sentenceEn": "She picked a red cherry.",
+        "sentenceZh": "她摘了一颗红樱桃。"
+      },
+      {
+        "en": "mango",
+        "zh": "芒果",
+        "ipa": "/ˈmæŋɡoʊ/",
+        "sentenceEn": "Mango is my favorite fruit.",
+        "sentenceZh": "芒果是我最爱的水果。"
+      },
+      {
+        "en": "lemon",
+        "zh": "柠檬",
+        "ipa": "/ˈlemən/",
+        "sentenceEn": "The lemon is very sour.",
+        "sentenceZh": "这个柠檬非常酸。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-2",
+    "category": "权威主题库",
+    "title": "四季英语单词大全",
+    "words": [
+      {
+        "en": "spring",
+        "zh": "春天",
+        "ipa": "/sprɪŋ/",
+        "sentenceEn": "Spring is coming soon.",
+        "sentenceZh": "春天很快就要来了。"
+      },
+      {
+        "en": "summer",
+        "zh": "夏天",
+        "ipa": "/ˈsʌmər/",
+        "sentenceEn": "Summer is very hot here.",
+        "sentenceZh": "这里夏天非常热。"
+      },
+      {
+        "en": "autumn",
+        "zh": "秋天",
+        "ipa": "/ˈɔːtəm/",
+        "sentenceEn": "Autumn leaves are falling down.",
+        "sentenceZh": "秋天的落叶飘下来。"
+      },
+      {
+        "en": "winter",
+        "zh": "冬天",
+        "ipa": "/ˈwɪntər/",
+        "sentenceEn": "I like playing in winter.",
+        "sentenceZh": "我喜欢在冬天玩耍。"
+      },
+      {
+        "en": "season",
+        "zh": "季节",
+        "ipa": "/ˈsiːzn/",
+        "sentenceEn": "What is your favorite season?",
+        "sentenceZh": "你最喜欢哪个季节？"
+      },
+      {
+        "en": "warm",
+        "zh": "温暖的",
+        "ipa": "/wɔːrm/",
+        "sentenceEn": "The weather is warm today.",
+        "sentenceZh": "今天天气很温暖。"
+      },
+      {
+        "en": "cool",
+        "zh": "凉爽的",
+        "ipa": "/kuːl/",
+        "sentenceEn": "It is cool in autumn.",
+        "sentenceZh": "秋天很凉爽。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-3",
+    "category": "权威主题库",
+    "title": "国家英语单词大全",
+    "words": [
+      {
+        "en": "China",
+        "zh": "中国",
+        "ipa": "/ˈtʃaɪnə/",
+        "sentenceEn": "I am from China.",
+        "sentenceZh": "我来自中国。"
+      },
+      {
+        "en": "America",
+        "zh": "美国",
+        "ipa": "/əˈmerɪkə/",
+        "sentenceEn": "He lives in America.",
+        "sentenceZh": "他住在美国。"
+      },
+      {
+        "en": "Britain",
+        "zh": "英国",
+        "ipa": "/ˈbrɪtn/",
+        "sentenceEn": "London is in Britain.",
+        "sentenceZh": "伦敦在英国。"
+      },
+      {
+        "en": "Japan",
+        "zh": "日本",
+        "ipa": "/dʒəˈpæn/",
+        "sentenceEn": "She traveled to Japan.",
+        "sentenceZh": "她去日本旅行了。"
+      },
+      {
+        "en": "France",
+        "zh": "法国",
+        "ipa": "/fræns/",
+        "sentenceEn": "Paris is the capital of France.",
+        "sentenceZh": "巴黎是法国的首府。"
+      },
+      {
+        "en": "Germany",
+        "zh": "德国",
+        "ipa": "/ˈdʒɜːrməni/",
+        "sentenceEn": "He bought a car from Germany.",
+        "sentenceZh": "他买了一辆德国车。"
+      },
+      {
+        "en": "Canada",
+        "zh": "加拿大",
+        "ipa": "/ˈkænədə/",
+        "sentenceEn": "It is cold in Canada.",
+        "sentenceZh": "加拿大很冷。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-4",
+    "category": "权威主题库",
+    "title": "工具英语单词大全",
+    "words": [
+      {
+        "en": "hammer",
+        "zh": "锤子",
+        "ipa": "/ˈhæmər/",
+        "sentenceEn": "Pass me the hammer.",
+        "sentenceZh": "把锤子递给我。"
+      },
+      {
+        "en": "wrench",
+        "zh": "扳手",
+        "ipa": "/rentʃ/",
+        "sentenceEn": "I need a wrench.",
+        "sentenceZh": "我需要一个扳手。"
+      },
+      {
+        "en": "nail",
+        "zh": "钉子",
+        "ipa": "/neɪl/",
+        "sentenceEn": "He hit the nail.",
+        "sentenceZh": "他敲了那个钉子。"
+      },
+      {
+        "en": "screw",
+        "zh": "螺丝",
+        "ipa": "/skruː/",
+        "sentenceEn": "Tighten the screw now.",
+        "sentenceZh": "现在把螺丝拧紧。"
+      },
+      {
+        "en": "scissors",
+        "zh": "剪刀",
+        "ipa": "/ˈsɪzərz/",
+        "sentenceEn": "Use the scissors to cut it.",
+        "sentenceZh": "用剪刀把它剪开。"
+      },
+      {
+        "en": "brush",
+        "zh": "刷子",
+        "ipa": "/brʌʃ/",
+        "sentenceEn": "Clean it with a brush.",
+        "sentenceZh": "用刷子清洗它。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-5",
+    "category": "权威主题库",
+    "title": "房间英语单词大全",
+    "words": [
+      {
+        "en": "bedroom",
+        "zh": "卧室",
+        "ipa": "/ˈbedruːm/",
+        "sentenceEn": "I sleep in my bedroom.",
+        "sentenceZh": "我在卧室里睡觉。"
+      },
+      {
+        "en": "kitchen",
+        "zh": "厨房",
+        "ipa": "/ˈkɪtʃɪn/",
+        "sentenceEn": "She is cooking in the kitchen.",
+        "sentenceZh": "她正在厨房做饭。"
+      },
+      {
+        "en": "bathroom",
+        "zh": "浴室",
+        "ipa": "/ˈbæθruːm/",
+        "sentenceEn": "The bathroom is very clean.",
+        "sentenceZh": "这间浴室非常干净。"
+      },
+      {
+        "en": "balcony",
+        "zh": "阳台",
+        "ipa": "/ˈbælkəni/",
+        "sentenceEn": "We stood on the balcony.",
+        "sentenceZh": "我们站在阳台上。"
+      },
+      {
+        "en": "floor",
+        "zh": "地板",
+        "ipa": "/flɔːr/",
+        "sentenceEn": "Sweep the floor please.",
+        "sentenceZh": "请把地板扫一下。"
+      },
+      {
+        "en": "wall",
+        "zh": "墙壁",
+        "ipa": "/wɔːl/",
+        "sentenceEn": "Paint the wall white.",
+        "sentenceZh": "把墙漆成白色。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-6",
+    "category": "权威主题库",
+    "title": "饮料英语单词大全",
+    "words": [
+      {
+        "en": "water",
+        "zh": "水",
+        "ipa": "/ˈwɔːtər/",
+        "sentenceEn": "Can I have some water?",
+        "sentenceZh": "能给我点水吗？"
+      },
+      {
+        "en": "tea",
+        "zh": "茶",
+        "ipa": "/tiː/",
+        "sentenceEn": "Would you like some tea?",
+        "sentenceZh": "你想喝点茶吗？"
+      },
+      {
+        "en": "coffee",
+        "zh": "咖啡",
+        "ipa": "/ˈkɔːfi/",
+        "sentenceEn": "I drink coffee every morning.",
+        "sentenceZh": "我每天早上喝咖啡。"
+      },
+      {
+        "en": "milk",
+        "zh": "牛奶",
+        "ipa": "/mɪlk/",
+        "sentenceEn": "Drink a glass of milk.",
+        "sentenceZh": "喝一杯牛奶吧。"
+      },
+      {
+        "en": "juice",
+        "zh": "果汁",
+        "ipa": "/dʒuːs/",
+        "sentenceEn": "She ordered an apple juice.",
+        "sentenceZh": "她点了一杯苹果汁。"
+      },
+      {
+        "en": "beer",
+        "zh": "啤酒",
+        "ipa": "/bɪr/",
+        "sentenceEn": "He is drinking cold beer.",
+        "sentenceZh": "他正在喝冰啤酒。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-7",
+    "category": "权威主题库",
+    "title": "办公室英语单词大全",
+    "words": [
+      {
+        "en": "desk",
+        "zh": "桌子",
+        "ipa": "/desk/",
+        "sentenceEn": "My computer is on the desk.",
+        "sentenceZh": "我的电脑在桌子上。"
+      },
+      {
+        "en": "chair",
+        "zh": "椅子",
+        "ipa": "/tʃer/",
+        "sentenceEn": "Sit down on the chair.",
+        "sentenceZh": "在椅子上坐下。"
+      },
+      {
+        "en": "computer",
+        "zh": "电脑",
+        "ipa": "/kəmˈpjuːtər/",
+        "sentenceEn": "Turn on the computer.",
+        "sentenceZh": "打开电脑吧。"
+      },
+      {
+        "en": "printer",
+        "zh": "打印机",
+        "ipa": "/ˈprɪntər/",
+        "sentenceEn": "The printer is broken.",
+        "sentenceZh": "这台打印机坏了。"
+      },
+      {
+        "en": "paper",
+        "zh": "纸",
+        "ipa": "/ˈpeɪpər/",
+        "sentenceEn": "I need a piece of paper.",
+        "sentenceZh": "我需要一张纸。"
+      },
+      {
+        "en": "boss",
+        "zh": "老板",
+        "ipa": "/bɔːs/",
+        "sentenceEn": "My boss is a nice man.",
+        "sentenceZh": "我的老板是个好人。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-8",
+    "category": "权威主题库",
+    "title": "自然英语单词大全",
+    "words": [
+      {
+        "en": "sun",
+        "zh": "太阳",
+        "ipa": "/sʌn/",
+        "sentenceEn": "The sun is shining bright.",
+        "sentenceZh": "太阳照耀得很明亮。"
+      },
+      {
+        "en": "moon",
+        "zh": "月亮",
+        "ipa": "/muːn/",
+        "sentenceEn": "Look at the full moon.",
+        "sentenceZh": "看那轮满月。"
+      },
+      {
+        "en": "sky",
+        "zh": "天空",
+        "ipa": "/skaɪ/",
+        "sentenceEn": "The sky is blue today.",
+        "sentenceZh": "今天天空很蓝。"
+      },
+      {
+        "en": "cloud",
+        "zh": "云",
+        "ipa": "/klaʊd/",
+        "sentenceEn": "There is a dark cloud.",
+        "sentenceZh": "有一朵乌云。"
+      },
+      {
+        "en": "wind",
+        "zh": "风",
+        "ipa": "/wɪnd/",
+        "sentenceEn": "The wind is blowing hard.",
+        "sentenceZh": "风吹得很大。"
+      },
+      {
+        "en": "tree",
+        "zh": "树",
+        "ipa": "/triː/",
+        "sentenceEn": "This tree is very tall.",
+        "sentenceZh": "这棵树非常高。"
+      },
+      {
+        "en": "flower",
+        "zh": "花",
+        "ipa": "/ˈflaʊər/",
+        "sentenceEn": "She picked a beautiful flower.",
+        "sentenceZh": "她摘了一朵美丽的花。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-9",
+    "category": "权威主题库",
+    "title": "食物英语单词大全",
+    "words": [
+      {
+        "en": "bread",
+        "zh": "面包",
+        "ipa": "/bred/",
+        "sentenceEn": "I like eating warm bread.",
+        "sentenceZh": "我喜欢吃热面包。"
+      },
+      {
+        "en": "rice",
+        "zh": "米饭",
+        "ipa": "/raɪs/",
+        "sentenceEn": "We eat rice every day.",
+        "sentenceZh": "我们每天吃米饭。"
+      },
+      {
+        "en": "noodle",
+        "zh": "面条",
+        "ipa": "/ˈnuːdl/",
+        "sentenceEn": "He cooking a bowl of noodle.",
+        "sentenceZh": "他在煮一碗面条。"
+      },
+      {
+        "en": "meat",
+        "zh": "肉",
+        "ipa": "/miːt/",
+        "sentenceEn": "They sell fresh meat here.",
+        "sentenceZh": "他们这里卖鲜肉。"
+      },
+      {
+        "en": "fish",
+        "zh": "鱼",
+        "ipa": "/fɪʃ/",
+        "sentenceEn": "The fish tastes very good.",
+        "sentenceZh": "这条鱼味道非常好。"
+      },
+      {
+        "en": "egg",
+        "zh": "鸡蛋",
+        "ipa": "/eɡ/",
+        "sentenceEn": "I had a boiled egg.",
+        "sentenceZh": "我吃了一个水煮蛋。"
+      },
+      {
+        "en": "cake",
+        "zh": "蛋糕",
+        "ipa": "/keɪk/",
+        "sentenceEn": "Happy birthday and cut the cake.",
+        "sentenceZh": "生日快乐，切蛋糕吧。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-10",
+    "category": "权威主题库",
+    "title": "家庭成员英语单词大全",
+    "words": [
+      {
+        "en": "father",
+        "zh": "父亲",
+        "ipa": "/ˈfɑːðər/",
+        "sentenceEn": "My father is very tall.",
+        "sentenceZh": "我的父亲非常高。"
+      },
+      {
+        "en": "mother",
+        "zh": "母亲",
+        "ipa": "/ˈmʌðər/",
+        "sentenceEn": "I love my dear mother.",
+        "sentenceZh": "我爱我亲爱的母亲。"
+      },
+      {
+        "en": "son",
+        "zh": "儿子",
+        "ipa": "/sʌn/",
+        "sentenceEn": "He is a good son.",
+        "sentenceZh": "他是个好儿子。"
+      },
+      {
+        "en": "daughter",
+        "zh": "女儿",
+        "ipa": "/ˈdɔːtər/",
+        "sentenceEn": "Her daughter is quite young.",
+        "sentenceZh": "她的女儿还很小。"
+      },
+      {
+        "en": "brother",
+        "zh": "兄弟",
+        "ipa": "/ˈbrʌðər/",
+        "sentenceEn": "My brother plays the guitar.",
+        "sentenceZh": "我的兄弟弹吉他。"
+      },
+      {
+        "en": "sister",
+        "zh": "姐妹",
+        "ipa": "/ˈsɪstər/",
+        "sentenceEn": "His sister works very hard.",
+        "sentenceZh": "他的姐妹工作很努力。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-11",
+    "category": "权威主题库",
+    "title": "颜色英语单词大全",
+    "words": [
+      {
+        "en": "red",
+        "zh": "红色的",
+        "ipa": "/red/",
+        "sentenceEn": "She likes her red dress.",
+        "sentenceZh": "她喜欢她的红裙子。"
+      },
+      {
+        "en": "blue",
+        "zh": "蓝色的",
+        "ipa": "/bluː/",
+        "sentenceEn": "The sea is deeply blue.",
+        "sentenceZh": "大海深蓝。"
+      },
+      {
+        "en": "green",
+        "zh": "绿色的",
+        "ipa": "/ɡriːn/",
+        "sentenceEn": "The leaves turned green.",
+        "sentenceZh": "树叶变绿了。"
+      },
+      {
+        "en": "yellow",
+        "zh": "黄色的",
+        "ipa": "/ˈjeloʊ/",
+        "sentenceEn": "He draws a yellow sun.",
+        "sentenceZh": "他画了一个黄色的太阳。"
+      },
+      {
+        "en": "black",
+        "zh": "黑色的",
+        "ipa": "/blæk/",
+        "sentenceEn": "I bought a black car.",
+        "sentenceZh": "我买了一辆黑色的车。"
+      },
+      {
+        "en": "white",
+        "zh": "白色的",
+        "ipa": "/waɪt/",
+        "sentenceEn": "Look at the white cloud.",
+        "sentenceZh": "看那朵白云。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-12",
+    "category": "权威主题库",
+    "title": "交通工具英语单词大全",
+    "words": [
+      {
+        "en": "car",
+        "zh": "小汽车",
+        "ipa": "/kɑːr/",
+        "sentenceEn": "I drive a car to work.",
+        "sentenceZh": "我开车去上班。"
+      },
+      {
+        "en": "bus",
+        "zh": "公共汽车",
+        "ipa": "/bʌs/",
+        "sentenceEn": "We always take the bus.",
+        "sentenceZh": "我们总是坐公交车。"
+      },
+      {
+        "en": "train",
+        "zh": "火车",
+        "ipa": "/treɪn/",
+        "sentenceEn": "The train is arriving soon.",
+        "sentenceZh": "火车马上就要到了。"
+      },
+      {
+        "en": "bike",
+        "zh": "自行车",
+        "ipa": "/baɪk/",
+        "sentenceEn": "He riding a fast bike.",
+        "sentenceZh": "他在骑一辆快车。"
+      },
+      {
+        "en": "plane",
+        "zh": "飞机",
+        "ipa": "/pleɪn/",
+        "sentenceEn": "They flew in a large plane.",
+        "sentenceZh": "他们坐大飞机飞行。"
+      },
+      {
+        "en": "boat",
+        "zh": "小船",
+        "ipa": "/boʊt/",
+        "sentenceEn": "Row the boat gently.",
+        "sentenceZh": "轻轻地划这只小船。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-13",
+    "category": "权威主题库",
+    "title": "音乐英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 音乐.",
+        "sentenceZh": "这是音乐的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-14",
+    "category": "权威主题库",
+    "title": "爱好英语单词大全",
+    "words": [
+      {
+        "en": "read",
+        "zh": "阅读",
+        "ipa": "/riːd/",
+        "sentenceEn": "I like to read books.",
+        "sentenceZh": "我喜欢看书。"
+      },
+      {
+        "en": "write",
+        "zh": "写作",
+        "ipa": "/raɪt/",
+        "sentenceEn": "She will write a novel.",
+        "sentenceZh": "她要写一本小说。"
+      },
+      {
+        "en": "draw",
+        "zh": "画画",
+        "ipa": "/drɔː/",
+        "sentenceEn": "He can draw a portrait.",
+        "sentenceZh": "他能画一幅肖像。"
+      },
+      {
+        "en": "sing",
+        "zh": "唱歌",
+        "ipa": "/sɪŋ/",
+        "sentenceEn": "They sing a beautiful song.",
+        "sentenceZh": "他们唱了一支优美的歌。"
+      },
+      {
+        "en": "dance",
+        "zh": "跳舞",
+        "ipa": "/dæns/",
+        "sentenceEn": "Let us dance together now.",
+        "sentenceZh": "让我们现在一起跳舞吧。"
+      },
+      {
+        "en": "swim",
+        "zh": "游泳",
+        "ipa": "/swɪm/",
+        "sentenceEn": "I swim in the pool.",
+        "sentenceZh": "我在泳池里游泳。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-15",
+    "category": "权威主题库",
+    "title": "旅行英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 旅行.",
+        "sentenceZh": "这是旅行的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-16",
+    "category": "权威主题库",
+    "title": "健康英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 健康.",
+        "sentenceZh": "这是健康的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-17",
+    "category": "权威主题库",
+    "title": "天气英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 天气.",
+        "sentenceZh": "这是天气的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-18",
+    "category": "权威主题库",
+    "title": "学校英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 学校.",
+        "sentenceZh": "这是学校的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-19",
+    "category": "权威主题库",
+    "title": "动物英语单词大全",
+    "words": [
+      {
+        "en": "dog",
+        "zh": "狗",
+        "ipa": "/dɔːɡ/",
+        "sentenceEn": "The dog is barking loudly.",
+        "sentenceZh": "那只狗在狂吠。"
+      },
+      {
+        "en": "cat",
+        "zh": "猫",
+        "ipa": "/kæt/",
+        "sentenceEn": "My cat is sleeping peacefully.",
+        "sentenceZh": "我的猫睡得很香。"
+      },
+      {
+        "en": "bird",
+        "zh": "鸟",
+        "ipa": "/bɜːrd/",
+        "sentenceEn": "A bird flies in the sky.",
+        "sentenceZh": "一只鸟在天上飞。"
+      },
+      {
+        "en": "fish",
+        "zh": "鱼",
+        "ipa": "/fɪʃ/",
+        "sentenceEn": "The fish swims in water.",
+        "sentenceZh": "鱼在水中游。"
+      },
+      {
+        "en": "horse",
+        "zh": "马",
+        "ipa": "/hɔːrs/",
+        "sentenceEn": "He rides a wild horse.",
+        "sentenceZh": "他骑着一匹野马。"
+      },
+      {
+        "en": "cow",
+        "zh": "牛",
+        "ipa": "/kaʊ/",
+        "sentenceEn": "The cow eats green grass.",
+        "sentenceZh": "牛吃着青草。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-20",
+    "category": "权威主题库",
+    "title": "数字英语单词大全",
+    "words": [
+      {
+        "en": "one",
+        "zh": "一",
+        "ipa": "/wʌn/",
+        "sentenceEn": "I have only one apple.",
+        "sentenceZh": "我只有一个苹果。"
+      },
+      {
+        "en": "two",
+        "zh": "二",
+        "ipa": "/tuː/",
+        "sentenceEn": "She needs two fresh tickets.",
+        "sentenceZh": "她需要两张新票。"
+      },
+      {
+        "en": "three",
+        "zh": "三",
+        "ipa": "/θriː/",
+        "sentenceEn": "We bought three small books.",
+        "sentenceZh": "我们买了两本小书。"
+      },
+      {
+        "en": "four",
+        "zh": "四",
+        "ipa": "/fɔːr/",
+        "sentenceEn": "There are four big seasons.",
+        "sentenceZh": "有四个大季节。"
+      },
+      {
+        "en": "five",
+        "zh": "五",
+        "ipa": "/faɪv/",
+        "sentenceEn": "He found five golden rings.",
+        "sentenceZh": "他找到了五枚金戒指。"
+      },
+      {
+        "en": "zero",
+        "zh": "零",
+        "ipa": "/ˈzɪroʊ/",
+        "sentenceEn": "The score is completely zero.",
+        "sentenceZh": "分数完全是零。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-21",
+    "category": "权威主题库",
+    "title": "衣服英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 衣服.",
+        "sentenceZh": "这是衣服的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-22",
+    "category": "权威主题库",
+    "title": "时间英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 时间.",
+        "sentenceZh": "这是时间的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-23",
+    "category": "权威主题库",
+    "title": "运动英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 运动.",
+        "sentenceZh": "这是运动的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-24",
+    "category": "权威主题库",
+    "title": "厨房英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 厨房.",
+        "sentenceZh": "这是厨房的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-25",
+    "category": "权威主题库",
+    "title": "蔬菜英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 蔬菜.",
+        "sentenceZh": "这是蔬菜的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-26",
+    "category": "权威主题库",
+    "title": "身体部位英语单词大全",
+    "words": [
+      {
+        "en": "head",
+        "zh": "头",
+        "ipa": "/hed/",
+        "sentenceEn": "My head hurts a lot.",
+        "sentenceZh": "我的头很痛。"
+      },
+      {
+        "en": "hair",
+        "zh": "头发",
+        "ipa": "/her/",
+        "sentenceEn": "She has beautiful long hair.",
+        "sentenceZh": "她有美丽的长发。"
+      },
+      {
+        "en": "eye",
+        "zh": "眼睛",
+        "ipa": "/aɪ/",
+        "sentenceEn": "Close your right eye please.",
+        "sentenceZh": "请闭上你的右眼。"
+      },
+      {
+        "en": "ear",
+        "zh": "耳朵",
+        "ipa": "/ɪr/",
+        "sentenceEn": "Listen with your own ear.",
+        "sentenceZh": "用你自己的耳朵听。"
+      },
+      {
+        "en": "nose",
+        "zh": "鼻子",
+        "ipa": "/noʊz/",
+        "sentenceEn": "He wiped his red nose.",
+        "sentenceZh": "他擦了擦发红的鼻子。"
+      },
+      {
+        "en": "mouth",
+        "zh": "嘴巴",
+        "ipa": "/maʊθ/",
+        "sentenceEn": "Open your mouth wide now.",
+        "sentenceZh": "现在张大你的嘴巴。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-27",
+    "category": "权威主题库",
+    "title": "花英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 花.",
+        "sentenceZh": "这是花的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-28",
+    "category": "权威主题库",
+    "title": "职业英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 职业.",
+        "sentenceZh": "这是职业的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  },
+  {
+    "id": "course-premium-29",
+    "category": "权威主题库",
+    "title": "家具英语单词大全",
+    "words": [
+      {
+        "en": "example",
+        "zh": "例子",
+        "ipa": "/ɪɡˈzæmpl/",
+        "sentenceEn": "This is an example for 家具.",
+        "sentenceZh": "这是家具的例子。"
+      },
+      {
+        "en": "learn",
+        "zh": "学习",
+        "ipa": "/lɜːrn/",
+        "sentenceEn": "We love learning new words.",
+        "sentenceZh": "我们热爱学习新单词。"
+      },
+      {
+        "en": "practice",
+        "zh": "练习",
+        "ipa": "/ˈpræktɪs/",
+        "sentenceEn": "Practice makes perfect.",
+        "sentenceZh": "熟能生巧。"
+      },
+      {
+        "en": "focus",
+        "zh": "专注",
+        "ipa": "/ˈfoʊkəs/",
+        "sentenceEn": "Stay completely focused now.",
+        "sentenceZh": "现在保持绝对专注。"
+      }
+    ]
+  }
+]
