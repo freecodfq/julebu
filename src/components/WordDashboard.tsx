@@ -6,10 +6,12 @@ import { useSoundEffect } from '../hooks/useSoundEffect';
 interface Props {
   course: CourseGroup;
   onBack: () => void;
+  startIndex?: number;
+  onProgressUpdate?: (index: number) => void;
 }
 
-export const WordDashboard: React.FC<Props> = ({ course, onBack }) => {
-  const [learningWordIdx, setLearningWordIdx] = useState<number | null>(null);
+export const WordDashboard: React.FC<Props> = ({ course, onBack, startIndex, onProgressUpdate }) => {
+  const [learningWordIdx, setLearningWordIdx] = useState<number | null>(startIndex ?? null);
   const { playClick, playError, initAudio } = useSoundEffect();
 
   return (
@@ -74,6 +76,7 @@ export const WordDashboard: React.FC<Props> = ({ course, onBack }) => {
            onClose={() => setLearningWordIdx(null)}
            playClick={playClick}
            playError={playError}
+           onProgressUpdate={onProgressUpdate}
          />
       )}
     </div>
@@ -88,8 +91,9 @@ const WordLearningModal: React.FC<{
   initialIdx: number, 
   onClose: () => void,
   playClick: () => void,
-  playError: () => void
-}> = ({ words, initialIdx, onClose, playClick, playError }) => {
+  playError: () => void,
+  onProgressUpdate?: (index: number) => void
+}> = ({ words, initialIdx, onClose, playClick, playError, onProgressUpdate }) => {
   const [idx, setIdx] = useState(initialIdx);
   const [typedInput, setTypedInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
@@ -150,7 +154,10 @@ const WordLearningModal: React.FC<{
   useEffect(() => {
      setTypedInput('');
      setTimeout(() => playAudio(words[idx].en, words[idx].zh), 50);
-  }, [idx, words]);
+     if (onProgressUpdate) {
+        onProgressUpdate(idx);
+     }
+  }, [idx, words, onProgressUpdate]);
 
   // Handle typing mechanics
   useEffect(() => {
