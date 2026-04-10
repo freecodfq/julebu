@@ -13,7 +13,7 @@ interface Props {
 export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses, xingrongCourses, onSelectCourse, progress }) => {
   const [activeTab, setActiveTab] = useState<'themes' | 'dictation' | 'xingrong'>('themes');
   const [activeLevel, setActiveLevel] = useState<string>('全部');
-  const { voiceGender, toggleVoiceGender } = useVoiceSettings();
+  const { voiceGender, voiceRate, toggleVoiceGender, updateVoiceRate } = useVoiceSettings();
 
   const levels = ['全部', '初中大纲', '高中大纲', '四级精选'];
 
@@ -27,25 +27,55 @@ export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses
     <div className="container">
       {/* Brand Header */}
       <div style={{ textAlign: 'center', marginBottom: '3rem', position: 'relative' }}>
-        {/* Voice Toggle */}
-        <div 
-          onClick={toggleVoiceGender}
-          style={{ 
-            position: 'absolute', top: '0', right: '0', 
+        <div style={{ position: 'absolute', top: '0', right: '0', display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-end' }}>
+          {/* Voice Toggle */}
+          <div 
+            onClick={toggleVoiceGender}
+            style={{ 
+              background: 'var(--julebu-surface)', 
+              border: '1px solid var(--julebu-border)',
+              borderRadius: '20px', padding: '0.4rem 1rem',
+              display: 'flex', alignItems: 'center', gap: '0.5rem',
+              cursor: 'pointer', transition: 'all 0.2s',
+              boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-purple)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-border)'; }}
+          >
+            <span style={{ fontSize: '1.2rem' }}>{voiceGender === 'female' ? '👩' : '👨'}</span>
+            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--julebu-text-secondary)' }}>
+              {voiceGender === 'female' ? '美式女声' : '美式男声'}
+            </span>
+          </div>
+
+          {/* Speed Control */}
+          <div style={{ 
             background: 'var(--julebu-surface)', 
             border: '1px solid var(--julebu-border)',
-            borderRadius: '20px', padding: '0.4rem 1rem',
-            display: 'flex', alignItems: 'center', gap: '0.5rem',
-            cursor: 'pointer', transition: 'all 0.2s',
+            borderRadius: '20px', padding: '0.2rem',
+            display: 'flex', gap: '4px',
             boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-          }}
-          onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-purple)'; }}
-          onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-border)'; }}
-        >
-          <span style={{ fontSize: '1.2rem' }}>{voiceGender === 'female' ? '👩' : '👨'}</span>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--julebu-text-secondary)' }}>
-            {voiceGender === 'female' ? '美式女声' : '美式男声'}
-          </span>
+          }}>
+            {[0.7, 1.0, 1.2].map(rate => (
+              <button
+                key={rate}
+                onClick={() => updateVoiceRate(rate)}
+                style={{
+                  border: 'none',
+                  borderRadius: '16px',
+                  padding: '0.25rem 0.75rem',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  background: voiceRate === rate ? 'var(--julebu-purple)' : 'transparent',
+                  color: voiceRate === rate ? '#fff' : 'var(--julebu-text-secondary)',
+                  transition: 'all 0.2s'
+                }}
+              >
+                {rate}x
+              </button>
+            ))}
+          </div>
         </div>
 
         <h1 style={{ fontSize: '3.5rem', fontWeight: 900, color: 'var(--julebu-text-main)', marginBottom: '0.5rem', letterSpacing: '-0.05em' }}>

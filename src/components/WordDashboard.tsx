@@ -97,7 +97,7 @@ const WordLearningModal: React.FC<{
   const [idx, setIdx] = useState(initialIdx);
   const [typedInput, setTypedInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
-  const { getBestVoice } = useVoiceSettings();
+  const { getBestVoice, voiceRate } = useVoiceSettings();
 
   const word = words[idx];
 
@@ -119,7 +119,7 @@ const WordLearningModal: React.FC<{
     const bestVoice = getBestVoice();
     if (bestVoice) enUtterance.voice = bestVoice;
     enUtterance.lang = 'en-US';
-    enUtterance.rate = 1.0;
+    enUtterance.rate = voiceRate;
     enUtterance.pitch = 1.05;
 
     // 3. Select Premium Chinese Voice

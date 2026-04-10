@@ -65,7 +65,7 @@ export function useSentenceBuilder(
 ) {
   const [gameState, setGameState] = useState<SentenceGameState>(() => initGameState(startIndex, 'word'));
   const [typedInput, setTypedInput] = useState('');
-  const { getBestVoice } = useVoiceSettings();
+  const { getBestVoice, voiceRate } = useVoiceSettings();
 
   function initGameState(index: number, phase: 'word' | 'sentence'): SentenceGameState {
     if (index >= words.length) {
@@ -156,11 +156,11 @@ export function useSentenceBuilder(
     if (bestVoice) utterance.voice = bestVoice;
     
     utterance.lang = 'en-US';
-    utterance.rate = 1.0; 
+    utterance.rate = voiceRate; 
     utterance.pitch = 1.05;
     
     window.speechSynthesis.speak(utterance);
-  }, [getBestVoice]);
+  }, [getBestVoice, voiceRate]);
 
   const stopAudio = useCallback(() => {
     if (window.speechSynthesis) {

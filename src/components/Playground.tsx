@@ -65,21 +65,10 @@ export const Playground: React.FC<Props> = ({
 }) => {
   const [showSectionSelector, setShowSectionSelector] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const { playClick, playError, initAudio } = useSoundEffect();
+  const { playClick, playError, playRight, initAudio } = useSoundEffect();
   
   const handleStepComplete = () => {
-     const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
-     const osc = ctx.createOscillator();
-     const gainNode = ctx.createGain();
-     osc.type = 'triangle';
-     osc.frequency.setValueAtTime(1200, ctx.currentTime);
-     osc.frequency.exponentialRampToValueAtTime(1600, ctx.currentTime + 0.1);
-     gainNode.gain.setValueAtTime(0.1, ctx.currentTime);
-     gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1);
-     osc.connect(gainNode);
-     gainNode.connect(ctx.destination);
-     osc.start();
-     osc.stop(ctx.currentTime + 0.1);
+     playRight();
   };
 
   const {
