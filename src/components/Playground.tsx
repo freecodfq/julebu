@@ -86,7 +86,6 @@ export const Playground: React.FC<Props> = ({
     gameState,
     currentRecord,
     typedInput,
-    isErrorShake,
     playCurrentAudio,
     stopAudio,
     toggleHint,
@@ -276,7 +275,7 @@ export const Playground: React.FC<Props> = ({
         </button>
       </div>
 
-      <div className={`card ${isErrorShake ? 'animate-shake' : ''}`} style={{ minHeight: '400px', display: 'flex', flexDirection: 'column' }}>
+      <div className="card" style={{ minHeight: '400px', display: 'flex', flexDirection: 'column' }}>
         
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: 'var(--julebu-border)', overflow: 'hidden' }}>
           <div style={{ 

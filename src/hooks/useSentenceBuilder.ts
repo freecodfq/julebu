@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useVoiceSettings } from './useVoiceSettings';
 import type { WordItem } from '../types';
 
@@ -65,7 +65,6 @@ export function useSentenceBuilder(
 ) {
   const [gameState, setGameState] = useState<SentenceGameState>(() => initGameState(startIndex, 'word'));
   const [typedInput, setTypedInput] = useState('');
-  const [isErrorShake, setIsErrorShake] = useState(false);
   const { getBestVoice } = useVoiceSettings();
 
   function initGameState(index: number, phase: 'word' | 'sentence'): SentenceGameState {
@@ -195,7 +194,6 @@ export function useSentenceBuilder(
 
         if (key === ' ' && !isLastWordInTarget) {
            if (!isWordMatch) {
-             // Wrong word — silently reset input for this word
              setTypedInput('');
              setGameState(prev => ({
                ...prev,
@@ -388,7 +386,6 @@ export function useSentenceBuilder(
     currentRecord,
     currentWordTarget,
     typedInput,
-    isErrorShake,
     wordStatus: getWordStatus(),
     playCurrentAudio: () => playAudio(gameState.targetWords.join(' ')),
     stopAudio,

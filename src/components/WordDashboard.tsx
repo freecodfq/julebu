@@ -92,7 +92,6 @@ const WordLearningModal: React.FC<{
 }> = ({ words, initialIdx, onClose, playClick, playError }) => {
   const [idx, setIdx] = useState(initialIdx);
   const [typedInput, setTypedInput] = useState('');
-  const [isShake, setIsShake] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const { getBestVoice } = useVoiceSettings();
 
@@ -266,7 +265,7 @@ const WordLearningModal: React.FC<{
         </button>
       </div>
 
-      <div className={`card ${isShake ? 'animate-shake' : 'animate-pop'}`} style={{
+      <div className="animate-pop" style={{
          width: '100%', maxWidth: '600px',
          background: 'var(--julebu-surface)',
          border: '1px solid #3f3f46',

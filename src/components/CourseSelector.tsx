@@ -7,7 +7,7 @@ interface Props {
   dictationCourses: CourseGroup[];
   xingrongCourses: CourseGroup[];
   onSelectCourse: (course: CourseGroup, mode: 'themes' | 'dictation' | 'xingrong') => void;
-  progress: Record<string, { maxScore: number; maxCombo: number; completedAt: number }>;
+  progress: Record<string, { maxScore: number; maxCombo: number; completed: boolean; lastIndex?: number }>;
 }
 
 export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses, xingrongCourses, onSelectCourse, progress }) => {
@@ -174,7 +174,6 @@ export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.5rem' }}>
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--julebu-text-main)' }}>{course.title}</h3>
                   {stats?.completed && <span style={{ color: 'var(--word-correct)', fontSize: '1.2rem' }}>✓</span>}
-                  {stats?.completedAt && <span style={{ color: 'var(--word-correct)', fontSize: '1.2rem' }}>✓</span>}
                 </div>
                 <p className="text-secondary" style={{ fontSize: '0.875rem' }}>{course.words.length} 个练习项</p>
               </div>
