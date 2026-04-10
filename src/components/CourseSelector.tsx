@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useVoiceSettings } from '../hooks/useVoiceSettings';
 import type { CourseGroup } from '../types';
 
 interface Props {
@@ -12,6 +13,7 @@ interface Props {
 export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses, xingrongCourses, onSelectCourse, progress }) => {
   const [activeTab, setActiveTab] = useState<'themes' | 'dictation' | 'xingrong'>('themes');
   const [activeLevel, setActiveLevel] = useState<string>('全部');
+  const { voiceGender, toggleVoiceGender } = useVoiceSettings();
 
   const levels = ['全部', '初中大纲', '高中大纲', '四级精选'];
 
@@ -24,7 +26,28 @@ export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses
   return (
     <div className="container">
       {/* Brand Header */}
-      <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+      <div style={{ textAlign: 'center', marginBottom: '3rem', position: 'relative' }}>
+        {/* Voice Toggle */}
+        <div 
+          onClick={toggleVoiceGender}
+          style={{ 
+            position: 'absolute', top: '0', right: '0', 
+            background: 'var(--julebu-surface)', 
+            border: '1px solid var(--julebu-border)',
+            borderRadius: '20px', padding: '0.4rem 1rem',
+            display: 'flex', alignItems: 'center', gap: '0.5rem',
+            cursor: 'pointer', transition: 'all 0.2s',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-purple)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-border)'; }}
+        >
+          <span style={{ fontSize: '1.2rem' }}>{voiceGender === 'female' ? '👩' : '👨'}</span>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--julebu-text-secondary)' }}>
+            {voiceGender === 'female' ? '美式女声' : '美式男声'}
+          </span>
+        </div>
+
         <h1 style={{ fontSize: '3.5rem', fontWeight: 900, color: 'var(--julebu-text-main)', marginBottom: '0.5rem', letterSpacing: '-0.05em' }}>
           Julebu <span style={{ color: 'var(--julebu-purple)' }}>Engine</span>
         </h1>

@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { useVoiceSettings } from './useVoiceSettings';
 import type { WordItem } from '../types';
 
 export interface SentenceGameState {
@@ -65,25 +66,7 @@ export function useSentenceBuilder(
   const [gameState, setGameState] = useState<SentenceGameState>(() => initGameState(startIndex, 'word'));
   const [typedInput, setTypedInput] = useState('');
   const [isErrorShake, setIsErrorShake] = useState(false);
-  const voiceCache = useRef<SpeechSynthesisVoice | null>(null);
-
-  // Initialize premium voice selection
-  useEffect(() => {
-     const setupVoice = () => {
-         const voices = window.speechSynthesis.getVoices();
-         // Attempt to pick a premium English voice
-         const premium = voices.find(v => 
-            (v.name.includes('Google US English') || v.name.includes('Microsoft Zira') || v.name.includes('Samantha') || v.name.includes('Karen')) 
-            && v.lang.startsWith('en')
-         );
-         const fallback = voices.find(v => v.lang.startsWith('en-US') || v.lang.startsWith('en'));
-         voiceCache.current = premium || fallback || voices[0];
-     };
-     setupVoice();
-     if (window.speechSynthesis.onvoiceschanged !== undefined) {
-         window.speechSynthesis.onvoiceschanged = setupVoice;
-     }
-  }, []);
+  const { getBestVoice } = useVoiceSettings();
 
   function initGameState(index: number, phase: 'word' | 'sentence'): SentenceGameState {
     if (index >= words.length) {
@@ -169,16 +152,16 @@ export function useSentenceBuilder(
   const playAudio = useCallback((text: string) => {
     if (!text || !window.speechSynthesis) return;
     
-    // Safety: only play if component or logic is likely still relevant
     const utterance = new SpeechSynthesisUtterance(text);
-    if (voiceCache.current) utterance.voice = voiceCache.current;
+    const bestVoice = getBestVoice();
+    if (bestVoice) utterance.voice = bestVoice;
     
     utterance.lang = 'en-US';
     utterance.rate = 1.0; 
     utterance.pitch = 1.05;
     
     window.speechSynthesis.speak(utterance);
-  }, []);
+  }, [getBestVoice]);
 
   const stopAudio = useCallback(() => {
     if (window.speechSynthesis) {

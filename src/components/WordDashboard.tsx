@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useVoiceSettings } from '../hooks/useVoiceSettings';
 import type { CourseGroup, WordItem } from '../types';
 import { useSoundEffect } from '../hooks/useSoundEffect';
 
@@ -92,25 +93,12 @@ const WordLearningModal: React.FC<{
   const [idx, setIdx] = useState(initialIdx);
   const [typedInput, setTypedInput] = useState('');
   const [isShake, setIsShake] = useState(false);
-  const voiceCache = useRef<SpeechSynthesisVoice | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const { getBestVoice } = useVoiceSettings();
 
   const word = words[idx];
 
-  // Voice Setup
   useEffect(() => {
-     const setupVoice = () => {
-         const vs = window.speechSynthesis.getVoices();
-         const premium = vs.find(v => 
-            (v.name.includes('Google US English') || v.name.includes('Microsoft Zira') || v.name.includes('Samantha') || v.name.includes('Karen')) 
-            && v.lang.startsWith('en')
-         );
-         const fallback = vs.find(v => v.lang.startsWith('en-US') || v.lang.startsWith('en'));
-         voiceCache.current = premium || fallback || vs[0];
-     };
-     setupVoice();
-     if (window.speechSynthesis.onvoiceschanged !== undefined) window.speechSynthesis.onvoiceschanged = setupVoice;
-     
      return () => {
         window.speechSynthesis.cancel();
      };
@@ -125,7 +113,8 @@ const WordLearningModal: React.FC<{
 
     // 2. Select English Voice
     const enUtterance = new SpeechSynthesisUtterance(en);
-    if (voiceCache.current) enUtterance.voice = voiceCache.current;
+    const bestVoice = getBestVoice();
+    if (bestVoice) enUtterance.voice = bestVoice;
     enUtterance.lang = 'en-US';
     enUtterance.rate = 1.0;
     enUtterance.pitch = 1.05;
