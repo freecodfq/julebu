@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useVoiceSettings } from '../hooks/useVoiceSettings';
+import { useSoundEffect } from '../hooks/useSoundEffect';
 import type { CourseGroup } from '../types';
 
 interface Props {
@@ -14,6 +15,7 @@ export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses
   const [activeTab, setActiveTab] = useState<'themes' | 'dictation' | 'xingrong'>('themes');
   const [activeLevel, setActiveLevel] = useState<string>('全部');
   const { voiceGender, voiceRate, toggleVoiceGender, updateVoiceRate } = useVoiceSettings();
+  const { initAudio } = useSoundEffect();
 
   const levels = ['全部', '初中大纲', '高中大纲', '四级精选'];
 
