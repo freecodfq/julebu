@@ -54,7 +54,10 @@ export const WordDashboard: React.FC<Props> = ({ course, onBack, startIndex, onP
                justifyContent: 'center',
                minHeight: '120px'
              }}
-             onClick={() => setLearningWordIdx(idx)}
+             onClick={() => {
+               initAudio();
+               setLearningWordIdx(idx);
+             }}
              onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-text-secondary)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
              onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-border)'; e.currentTarget.style.transform = 'translateY(0)'; }}
           >

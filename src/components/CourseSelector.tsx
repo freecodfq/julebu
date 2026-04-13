@@ -188,7 +188,10 @@ export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses
                 justifyContent: 'space-between',
                 minHeight: '180px'
               }}
-              onClick={() => onSelectCourse(course, activeTab)}
+              onClick={() => {
+                initAudio();
+                onSelectCourse(course, activeTab);
+              }}
               onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-6px)';
                   e.currentTarget.style.borderColor = 'var(--julebu-purple)';

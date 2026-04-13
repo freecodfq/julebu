@@ -19,9 +19,9 @@ export function useSoundEffect() {
       }
     };
 
-    loadSound('typing', '/julebu/sounds/typing.mp3');
-    loadSound('error', '/julebu/sounds/error.mp3');
-    loadSound('right', '/julebu/sounds/right.mp3');
+    loadSound('typing', 'sounds/typing.mp3');
+    loadSound('error', 'sounds/error.mp3');
+    loadSound('right', 'sounds/right.mp3');
   }, []);
 
   const initAudio = useCallback(async () => {
