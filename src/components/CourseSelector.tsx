@@ -14,7 +14,7 @@ interface Props {
 export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses, xingrongCourses, onSelectCourse, progress }) => {
   const [activeTab, setActiveTab] = useState<'themes' | 'dictation' | 'xingrong'>('themes');
   const [activeLevel, setActiveLevel] = useState<string>('全部');
-  const { voiceGender, voiceRate, toggleVoiceGender, updateVoiceRate } = useVoiceSettings();
+  const { voiceGender, voiceRate, isSpeechEnabled, toggleVoiceGender, toggleSpeechEnabled, updateVoiceRate } = useVoiceSettings();
   const { initAudio } = useSoundEffect();
 
   const levels = ['全部', '初中大纲', '高中大纲', '四级精选'];
@@ -30,24 +30,42 @@ export const CourseSelector: React.FC<Props> = ({ themeCourses, dictationCourses
       {/* Brand Header */}
       <div style={{ textAlign: 'center', marginBottom: '3rem', position: 'relative' }}>
         <div style={{ position: 'absolute', top: '0', right: '0', display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'flex-end' }}>
-          {/* Voice Toggle */}
-          <div 
-            onClick={toggleVoiceGender}
-            style={{ 
-              background: 'var(--julebu-surface)', 
-              border: '1px solid var(--julebu-border)',
-              borderRadius: '20px', padding: '0.4rem 1rem',
-              display: 'flex', alignItems: 'center', gap: '0.5rem',
-              cursor: 'pointer', transition: 'all 0.2s',
-              boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
-            }}
-            onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-purple)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-border)'; }}
-          >
-            <span style={{ fontSize: '1.2rem' }}>{voiceGender === 'female' ? '👩' : '👨'}</span>
-            <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--julebu-text-secondary)' }}>
-              {voiceGender === 'female' ? '美式女声' : '美式男声'}
-            </span>
+          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+            {/* Speech Enable/Disable Toggle */}
+            <div 
+              onClick={toggleSpeechEnabled}
+              style={{ 
+                background: isSpeechEnabled ? 'rgba(139, 92, 246, 0.1)' : 'var(--julebu-surface)', 
+                border: '1px solid',
+                borderColor: isSpeechEnabled ? 'var(--julebu-purple)' : 'var(--julebu-border)',
+                borderRadius: '12px', padding: '0.4rem 0.6rem',
+                cursor: 'pointer', transition: 'all 0.2s',
+                display: 'flex', alignItems: 'center', justifyContent: 'center'
+              }}
+              title={isSpeechEnabled ? "点击关闭语音播报" : "点击开启语音播报"}
+            >
+              <span style={{ fontSize: '1.2rem' }}>{isSpeechEnabled ? '🔊' : '🔇'}</span>
+            </div>
+
+            {/* Voice Toggle */}
+            <div 
+              onClick={toggleVoiceGender}
+              style={{ 
+                background: 'var(--julebu-surface)', 
+                border: '1px solid var(--julebu-border)',
+                borderRadius: '20px', padding: '0.4rem 1rem',
+                display: 'flex', alignItems: 'center', gap: '0.5rem',
+                cursor: 'pointer', transition: 'all 0.2s',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-purple)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--julebu-border)'; }}
+            >
+              <span style={{ fontSize: '1.2rem' }}>{voiceGender === 'female' ? '👩' : '👨'}</span>
+              <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--julebu-text-secondary)' }}>
+                {voiceGender === 'female' ? '美式女声' : '美式男声'}
+              </span>
+            </div>
           </div>
 
           {/* Speed Control */}

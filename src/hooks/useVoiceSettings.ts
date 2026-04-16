@@ -12,6 +12,11 @@ export function useVoiceSettings() {
     return saved ? parseFloat(saved) : 0.8; // Default to 0.8 for beginners
   });
 
+  const [isSpeechEnabled, setIsSpeechEnabled] = useState<boolean>(() => {
+    const saved = localStorage.getItem('julebu_speech_enabled');
+    return saved !== null ? saved === 'true' : true; // Default to true
+  });
+
   const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
 
   useEffect(() => {
@@ -29,6 +34,14 @@ export function useVoiceSettings() {
     setVoiceGender(prev => {
       const next = prev === 'female' ? 'male' : 'female';
       localStorage.setItem('julebu_voice_gender', next);
+      return next;
+    });
+  }, []);
+
+  const toggleSpeechEnabled = useCallback(() => {
+    setIsSpeechEnabled(prev => {
+      const next = !prev;
+      localStorage.setItem('julebu_speech_enabled', next.toString());
       return next;
     });
   }, []);
@@ -66,7 +79,9 @@ export function useVoiceSettings() {
   return {
     voiceGender,
     voiceRate,
+    isSpeechEnabled,
     toggleVoiceGender,
+    toggleSpeechEnabled,
     updateVoiceRate,
     getBestVoice: () => getBestVoice(voiceGender)
   };

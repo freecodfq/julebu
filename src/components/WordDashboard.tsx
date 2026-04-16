@@ -150,8 +150,10 @@ const WordLearningModal: React.FC<{
     zhUtterance.rate = 0.95; // Slightly slower feels more instructional/natural
     zhUtterance.pitch = 1.1; // Slightly higher pitch often sounds less robotic in synthesis
 
-    window.speechSynthesis.speak(enUtterance);
-    window.speechSynthesis.speak(zhUtterance);
+    if (isSpeechEnabled) {
+      window.speechSynthesis.speak(enUtterance);
+      window.speechSynthesis.speak(zhUtterance);
+    }
 
     // Keep references to avoid GC bugs
     activeUtterancesRef.current = [enUtterance, zhUtterance];
