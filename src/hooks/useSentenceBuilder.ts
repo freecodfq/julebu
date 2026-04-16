@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useVoiceSettings } from './useVoiceSettings';
 import type { WordItem } from '../types';
 
