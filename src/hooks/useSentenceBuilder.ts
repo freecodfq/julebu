@@ -148,10 +148,18 @@ export function useSentenceBuilder(
   const currentRecord = words[gameState.currentRecordIndex] as WordItem | undefined;
   const currentWordTarget = gameState.targetWords[gameState.currentWordIndex] || '';
 
+  const currentUtteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
+
   const playAudio = useCallback((text: string) => {
     if (!text || !window.speechSynthesis) return;
     
+    // 1. Force cancel any pending/stuck speech tasks
+    window.speechSynthesis.cancel();
+
+    // 2. Create and store reference to avoid Garbage Collection bugs
     const utterance = new SpeechSynthesisUtterance(text);
+    currentUtteranceRef.current = utterance;
+
     const bestVoice = getBestVoice();
     if (bestVoice) utterance.voice = bestVoice;
     
@@ -159,6 +167,13 @@ export function useSentenceBuilder(
     utterance.rate = voiceRate; 
     utterance.pitch = 1.05;
     
+    // 3. Clear reference when done (optional but cleaner)
+    utterance.onend = () => {
+      if (currentUtteranceRef.current === utterance) {
+        currentUtteranceRef.current = null;
+      }
+    };
+
     window.speechSynthesis.speak(utterance);
   }, [getBestVoice, voiceRate]);
 

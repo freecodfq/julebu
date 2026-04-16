@@ -101,6 +101,7 @@ const WordLearningModal: React.FC<{
   const [typedInput, setTypedInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
   const { getBestVoice, voiceRate } = useVoiceSettings();
+  const activeUtterancesRef = useRef<SpeechSynthesisUtterance[]>([]);
 
   const word = words[idx];
 
@@ -151,6 +152,9 @@ const WordLearningModal: React.FC<{
 
     window.speechSynthesis.speak(enUtterance);
     window.speechSynthesis.speak(zhUtterance);
+
+    // Keep references to avoid GC bugs
+    activeUtterancesRef.current = [enUtterance, zhUtterance];
   };
 
   // Auto-play on mount or word change
