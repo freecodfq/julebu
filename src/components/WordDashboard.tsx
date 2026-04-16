@@ -100,7 +100,7 @@ const WordLearningModal: React.FC<{
   const [idx, setIdx] = useState(initialIdx);
   const [typedInput, setTypedInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
-  const { getBestVoice, voiceRate } = useVoiceSettings();
+  const { getBestVoice, voiceRate, isSpeechEnabled } = useVoiceSettings();
   const activeUtterancesRef = useRef<SpeechSynthesisUtterance[]>([]);
 
   const word = words[idx];
